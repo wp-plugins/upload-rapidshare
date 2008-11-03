@@ -1,15 +1,15 @@
 === upload-rapidshare ===
-Contributors: jessai, corimanon, youte , peggy
-Tags: upload , file , rapidshare, fichier
-Requires at least: 
-You can upload file to rapidshare.
+Contributors : jessai, corimanon, youte , peggy
+Tags : upload , file , rapidshare, fichier
+Requires at least :
+You can upload your files on rapidshare.
 
 == Description ==
 
-Just upload your file to rapidshare.
+Just upload your files on rapidshare.
 
 == Installation ==
 
-Upload the upload rapidshare plugin to your blog, Activate it.
+Download the "upload rapidshare plugin's" on your blog, Activate it.
 
 
