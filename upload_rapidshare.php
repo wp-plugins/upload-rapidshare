@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: upload rapidshare
-Plugin URI: http://salledewordpress.fr.nf
+Plugin URI: http://jessai.fr.nf/archives/6
 Description: just upload file to rapidshare and get code to put in your post
 Version: 1.0.0
 Author: salledewordpress
-Author URI: http://salledewordpress.fr.nf
+Author URI: http://jessai.fr.nf
 */
 // This function tells WP to add a new "meta box"
 function add_rapid_box() {
