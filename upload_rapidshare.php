@@ -3,7 +3,7 @@
 Plugin Name: upload rapidshare
 Plugin URI: http://jessai.fr.nf
 Description: just upload file to rapidshare and get code to put in your post
-Version: 1.1.1
+Version: 1.2.1
 Author: jessai
 Author URI: http://jessai.fr.nf
 */
@@ -75,7 +75,7 @@ function add_rapid_box() {
 }
 // This function echoes the content of our meta box
 function add_rapid() {
-	echo '<div class="inside"><object type="text/html" id="rapidshare" data="../wp-content/plugins/upload rapidshare/form.php?rapidpremium='.get_option("upload_rapid_prenium").'&rapidid='.get_option("upload_rapid_id").'&rapidpw='.get_option("upload_rapid_mp").'" width="100%"';if (get_option(upload_rapid_id)=='') { echo 'height="160px">'; } else { echo 'height="100px">'; } echo '</object></div>';
+	echo '<div class="inside"><object type="text/html" id="rapidshare" data="../wp-content/plugins/upload-rapidshare/form.php?rapidpremium='.get_option("upload_rapid_prenium").'&rapidid='.get_option("upload_rapid_id").'&rapidpw='.get_option("upload_rapid_mp").'" width="100%"';if (get_option(upload_rapid_id)=='') { echo 'height="160px">'; } else { echo 'height="100px">'; } echo '</object></div>';
 }
 
 // Hook things in, late enough so that add_meta_box() is defined
