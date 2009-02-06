@@ -14,6 +14,7 @@ msgstr ""
 
 #: upload_rapidshare.php:16
 #: upload_rapidshare:38
+#: upload_rapidshare:39
 msgid "Compte Premium"
 msgstr ""
 
@@ -36,11 +37,22 @@ msgstr ""
 msgid "Mettre à jour les options"
 msgstr ""
 
+#: form.php:11
+msgid "COMPTE PREMIUM"
+msgstr ""
+
+#: form.php:12
+msgid "identifiant"
+msgstr ""
+
+#: form.php:12
+msgid "mot de passe"
+msgstr ""
+
+#: form.php:14
+msgid "votre lien"
+msgstr ""
+
 #: form.php:15
-msgid "lien avec un nom"
+msgid "nom du lien"
 msgstr ""
-
-#: form.php:17
-msgid "Upload"
-msgstr ""
-

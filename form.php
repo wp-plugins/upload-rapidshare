@@ -11,10 +11,10 @@ echo '<form name="form_upload" method="post" enctype="multipart/form-data"';
 		echo '<fieldset><div align="center">COMPTE PREMIUM</div><br />';
 		echo '<div align="center">identifiant : <input type="text" name="rapidid" />   mot de passe : <input type="password" name="rapidpw" /></div></fieldset><br />';
 	}	
-	echo '<input type="hidden" name="recu" value="votre lien" "style:/><input type="file" name="fileupload" id="upfile_0" class="myinput-file" size="25" tabindex="1" />
-		<input type="checkbox" name="urlnom" /> lien avec un nom  <input type="text" name="nomurl" />
+	echo '<span name="recu" style="display:none;">votre lien : </span><input type="file" name="fileupload" id="upfile_0" class="myinput-file" size="25" tabindex="1" onclick="copie_lien()" />
+		<span name="url"> nom du lien <input type="text" name="nomurl" />
 
-	<input type="submit" name="submit" value="Upload" />
+	<input type="submit" name="submit" value="Upload" /></span>
 	</form>';
 if ($rapidform) {
 	$rapidid = $_POST['rapidid'];
@@ -46,19 +46,28 @@ if ($retour[0] != "")
   
 // on affiche
 //**********************************************************
-  if (empty($_POST["urlnom"]))
+  /*if (empty($_POST["urlnom"]))
   {
   	$resultat = '<a href=\''.$resultat.'\' ></a>' ;
   }	
   else
-  {
+  {*/
 	 $resultat = '<a href=\''.$resultat.'\' >'.$_POST["nomurl"].'</a>' ;
-  } 
+  //} 
   
   echo '<a href="form.php">uploader un autre fichier</a>' ;
   echo '<br /><script type="text/javascript">document.getElementById(\'upfile_0\').type = "text";</script>' ;
-  echo '<script type="text/javascript">document.getElementById(\'upfile_0\').value = "'.$resultat.'";</script>' ;  
-  echo '<script type="text/javascript">document.getElementsByName(\'submit\')[0].type = "button";document.getElementsByName(\'submit\')[0].value = "votre lien"</script>' ;
-}
+  echo '<script type="text/javascript">document.getElementById(\'upfile_0\').value="'.$resultat.'";</script>' ;  
+  echo '<script type="text/javascript">document.getElementsByName(\'url\')[0].style.display = "none";document.getElementsByName(\'recu\')[0].style.display = ""</script>' ;
 
+}
+?>
+<script type="text/javascript">
+function copie_lien() {
+	var lien = document.getElementsByName("fileupload");
+	var lien1 = " "+ lien[0].value+" ";
+	parent.tinyMCE.execCommand('mceInsertContent',false,lien1);
+}
+</script>
+<?php
 ?>

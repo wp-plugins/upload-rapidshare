@@ -3,7 +3,7 @@
 Plugin Name: upload rapidshare
 Plugin URI: http://jessai.fr.nf
 Description: just upload file to rapidshare and get code to put in your post
-Version: 1.2.1
+Version: 1.3.2
 Author: jessai
 Author URI: http://jessai.fr.nf
 */
